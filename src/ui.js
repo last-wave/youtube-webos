@@ -1075,10 +1075,10 @@ function handleShortcutAction(action) {
         skipChapter('prev');
         break;
     case 'seek_15_fwd':
-        performBurstSeek(5, video);
+        performBurstSeek(10, video);
         break;
     case 'seek_15_back':
-        performBurstSeek(-5, video);
+        performBurstSeek(-10, video);
         break;
     case 'play_pause':
         playPauseLogic(video);
