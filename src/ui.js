@@ -35,9 +35,9 @@ let panelInitBlock = false;
 
 const shortcutCache = {};
 // Define keys including colors
-const shortcutKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'red', 'green', 'blue'];
+const shortcutKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'red', 'green', 'yellow', 'blue'];
 
-const COLOR_KEYS = new Set(['red', 'green', 'blue']);
+const COLOR_KEYS = new Set(['red', 'green', 'yellow', 'blue']);
 
 const cachedSelectors = {
     comments: null,
@@ -708,7 +708,7 @@ function performBurstSeek(seconds, video) {
     if (!video) return;
 	
     // Reset accumulators if direction changes (e.g. going from +15 to -15)
-	if ((seekAccumulator > 0 && seconds < 0) || (seekAccumulator < 0 && seconds > 0)) {
+	  if ((seekAccumulator > 0 && seconds < 0) || (seekAccumulator < 0 && seconds > 0)) {
         seekAccumulator = 0;
         pendingSeekOffset = 0; // Reset pending seek to prevent jitter
     }
@@ -1075,10 +1075,10 @@ function handleShortcutAction(action) {
         skipChapter('prev');
         break;
     case 'seek_15_fwd':
-        performBurstSeek(10, video);
+        performBurstSeek(5, video);
         break;
     case 'seek_15_back':
-        performBurstSeek(-10, video);
+        performBurstSeek(-5, video);
         break;
     case 'play_pause':
         playPauseLogic(video);
