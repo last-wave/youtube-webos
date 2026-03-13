@@ -261,9 +261,9 @@
   position: fixed;
   top: 1.85vh;
   right: 1.85vh;
-  font-size: 2.22vh;
+  font-size: 1.85vh;
   z-index: 1200;
-  max-width: 37vh;
+  max-width: 41.6vh;
 }
 
 .ytaf-notification-container .message {

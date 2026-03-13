@@ -708,7 +708,7 @@ function performBurstSeek(seconds, video) {
     if (!video) return;
 	
     // Reset accumulators if direction changes (e.g. going from +15 to -15)
-	if ((seekAccumulator > 0 && seconds < 0) || (seekAccumulator < 0 && seconds > 0)) {
+	  if ((seekAccumulator > 0 && seconds < 0) || (seekAccumulator < 0 && seconds > 0)) {
         seekAccumulator = 0;
         pendingSeekOffset = 0; // Reset pending seek to prevent jitter
     }
@@ -1075,10 +1075,10 @@ function handleShortcutAction(action) {
         skipChapter('prev');
         break;
     case 'seek_15_fwd':
-        performBurstSeek(10, video);
+        performBurstSeek(5, video);
         break;
     case 'seek_15_back':
-        performBurstSeek(-10, video);
+        performBurstSeek(-5, video);
         break;
     case 'play_pause':
         playPauseLogic(video);
