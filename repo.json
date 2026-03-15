@@ -20,7 +20,7 @@
         "iconUri": "https://raw.githubusercontent.com/last-wave/youtube-webos/dev/assets/icon.png",
         "sourceUrl": "https://github.com/last-wave/youtube-webos",
         "rootRequired": false,
-        "ipkUrl": "https://github.com/last-wave/youtube-webos/releases/download/v0.1.6/youtube.leanback.v4_0.1.6_all.ipk",
+        "ipkUrl": "https://github.com/last-wave/youtube-webos/releases/download/v0.1.7/youtube.leanback.v4_0.1.7_all.ipk",
         "ipkHash": {
           "sha256": "e1476ec464c6e475cd66cbee46fd085d0774548b046ba49267befa0de7d7d0d7"
         }
